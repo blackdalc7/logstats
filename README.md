@@ -1,5 +1,7 @@
 # logstats
 
+[![CI](https://github.com/blackdalc7/logstats/actions/workflows/ci.yml/badge.svg)](https://github.com/blackdalc7/logstats/actions/workflows/ci.yml)
+
 A fast little **web access-log analyser** written in Rust. Point it at an Apache
 or nginx access log and it reports how many requests came in, the status-code
 breakdown, how much data was served, and the busiest client IPs and paths. No
