@@ -1,0 +1,20 @@
+[package]
+name = "logstats"
+version = "1.0.0"
+edition = "2021"
+description = "Parse web access logs (Common/Combined Log Format) and report traffic statistics"
+license = "MIT"
+
+# No external dependencies: the standard library only.
+[dependencies]
+
+[[bin]]
+name = "logstats"
+path = "src/main.rs"
+
+[lib]
+name = "logstats"
+path = "src/lib.rs"
+
+[profile.release]
+opt-level = 2
